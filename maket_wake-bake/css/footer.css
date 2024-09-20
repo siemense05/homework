@@ -1,0 +1,83 @@
+
+.footer {
+    background: #AB8261;
+}
+
+.footer__inner {
+    color: var(--bg-color);
+    min-height: 253px;
+    display: grid;
+    grid-template-columns: .9fr .9fr 1.1fr auto;
+    gap: 40px 30px;
+    padding: 60px 0;
+}
+
+.logo-block {
+    margin-top: -30px;
+}
+
+.footer__logo {
+    display: block;
+    max-width: 240px;
+}
+
+.logo-block img {
+    width: 100%;
+}
+
+.socials {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    line-height: 0;
+}
+
+.socials__link path {
+    transition: var(--transition);
+}
+
+.socials__link:hover path {
+    fill: var(--accent-color);
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.business-info_clock {
+    line-height: 1.6;
+}
+
+.business--item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.business--item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info__list {
+    margin-bottom: 47px;
+}
+
+.contact-number {
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+.contact-number:hover {
+    color: var(--accent-color);
+}
+
+.copy {
+    color: #dec5b1;
+    text-align: right;
+}
+
