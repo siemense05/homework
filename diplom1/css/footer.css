@@ -1,0 +1,33 @@
+.footer__logo {
+    justify-self: center;
+}
+
+.footer__logo img {
+    width: 63px;
+}
+
+.footer__inner {
+    border-top: 1px solid var(--accent-text);
+    border-bottom: 1px solid var(--accent-text);
+    padding: 5px;
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+    align-items: center;
+    gap: 51px;
+}
+
+ul.footer__nav-list {
+    gap: 10px 20px;
+    font-weight: 600;
+} 
+
+.footer__nav-item:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.copy-text {
+    color: #787878;
+    text-align: center;
+    padding: 25px;
+}

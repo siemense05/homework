@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дипломная работа</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <div class="wrapper">
+        <header class="header main__header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="/"><img src="image/icons/logo.svg" alt=""></a>
+                        </div>
+                        <nav class="header__nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#trips" class="nav__link">Маршруты
+                                        <img src="image/icons/burgerArrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#gallery" class="nav__link">Галерея
+                                        <img src="image/icons/burgerArrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#qna" class="nav__link">Вопрос-Ответ
+                                        <img src="image/icons/burgerArrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#contacts" class="nav__link">Контакты
+                                        <img src="image/icons/burgerArrow.svg" alt="">
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">Забронировать
+                                        <img src="image/icons/burgerArrow.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__contact header__contact--at-burger-open">
+                                <div class="header__phone">
+                                    <a href="tel:+79283332645" class="contact__number">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.18721 9.74667C8.17297 10.7467 9.36571 11.5187 10.6817 12.0086L12.4619 10.5919C12.5147 10.5556 12.5773 10.5361 12.6414 10.5361C12.7055 10.5361 12.768 10.5556 12.8208 10.5919L16.1264 12.7217C16.2519 12.7971 16.3581 12.9007 16.4367 13.0243C16.5153 13.1478 16.564 13.288 16.5791 13.4336C16.5943 13.5792 16.5753 13.7264 16.5238 13.8635C16.4722 14.0005 16.3895 14.1237 16.2822 14.2233L14.7333 15.7533C14.5115 15.9725 14.2389 16.1334 13.9398 16.2215C13.6407 16.3097 13.3244 16.3224 13.0192 16.2586C9.97437 15.6298 7.16791 14.157 4.92054 12.0086C2.72305 9.83887 1.20239 7.07807 0.543043 4.06111C0.477907 3.76061 0.491502 3.44837 0.582509 3.15467C0.673517 2.86096 0.83885 2.59575 1.06249 2.38472L2.66804 0.835832C2.7674 0.733732 2.88856 0.655432 3.02247 0.606794C3.15637 0.558156 3.29954 0.540442 3.44126 0.554978C3.58298 0.569513 3.71958 0.615921 3.84082 0.690728C3.96207 0.765534 4.06482 0.8668 4.14138 0.986943L6.34193 4.25C6.37989 4.30124 6.40038 4.36332 6.40038 4.42708C6.40038 4.49085 6.37989 4.55293 6.34193 4.60417L4.89221 6.34667C5.3954 7.63628 6.17936 8.7977 7.18721 9.74667Z"
+                                                fill="white" />
+                                        </svg>+7 928 333 26 45
+                                    </a>
+                                </div>
+                                <button type="button" class="header__button modal-open__button">
+                                    Перезвоните мне
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="header__contact">
+                            <div class="header__phone">
+                                <a href="tel:+79283332645" class="contact__number">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.18721 9.74667C8.17297 10.7467 9.36571 11.5187 10.6817 12.0086L12.4619 10.5919C12.5147 10.5556 12.5773 10.5361 12.6414 10.5361C12.7055 10.5361 12.768 10.5556 12.8208 10.5919L16.1264 12.7217C16.2519 12.7971 16.3581 12.9007 16.4367 13.0243C16.5153 13.1478 16.564 13.288 16.5791 13.4336C16.5943 13.5792 16.5753 13.7264 16.5238 13.8635C16.4722 14.0005 16.3895 14.1237 16.2822 14.2233L14.7333 15.7533C14.5115 15.9725 14.2389 16.1334 13.9398 16.2215C13.6407 16.3097 13.3244 16.3224 13.0192 16.2586C9.97437 15.6298 7.16791 14.157 4.92054 12.0086C2.72305 9.83887 1.20239 7.07807 0.543043 4.06111C0.477907 3.76061 0.491502 3.44837 0.582509 3.15467C0.673517 2.86096 0.83885 2.59575 1.06249 2.38472L2.66804 0.835832C2.7674 0.733732 2.88856 0.655432 3.02247 0.606794C3.15637 0.558156 3.29954 0.540442 3.44126 0.554978C3.58298 0.569513 3.71958 0.615921 3.84082 0.690728C3.96207 0.765534 4.06482 0.8668 4.14138 0.986943L6.34193 4.25C6.37989 4.30124 6.40038 4.36332 6.40038 4.42708C6.40038 4.49085 6.37989 4.55293 6.34193 4.60417L4.89221 6.34667C5.3954 7.63628 6.17936 8.7977 7.18721 9.74667Z"
+                                            fill="white" />
+                                    </svg>+7 928 333 26 45
+                                </a>
+                            </div>
+                            <button type="button" class="header__button modal-open__button">
+                                Перезвоните мне
+                            </button>
+                        </div>
+                        <a href="#" class="burger__icon">
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="header__body">
+                        <h1 class="header__body-title">
+                            Экскурсии на квадроциклах в Геленджике
+                        </h1>
+                        <p class="header__body-text">
+                            приезжайте за новыми ощущениями и эмоциями!
+                        </p>
+                        <button class="header__body-button button--blue">
+                            Подобрать маршрут
+                            <div class="button__arrow">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 5.00001C0 4.8674 0.0526784 4.74022 0.146447 4.64645C0.240215 4.55268 0.367392 4.50001 0.5 4.50001H12.293L9.146 1.35401C9.05211 1.26012 8.99937 1.13278 8.99937 1.00001C8.99937 0.86723 9.05211 0.739893 9.146 0.646006C9.23989 0.552119 9.36722 0.499374 9.5 0.499374C9.63278 0.499374 9.76011 0.552119 9.854 0.646006L13.854 4.64601C13.9006 4.69245 13.9375 4.74763 13.9627 4.80837C13.9879 4.86912 14.0009 4.93424 14.0009 5.00001C14.0009 5.06577 13.9879 5.13089 13.9627 5.19164C13.9375 5.25238 13.9006 5.30756 13.854 5.35401L9.854 9.35401C9.76011 9.44789 9.63278 9.50064 9.5 9.50064C9.36722 9.50064 9.23989 9.44789 9.146 9.35401C9.05211 9.26012 8.99937 9.13278 8.99937 9.00001C8.99937 8.86723 9.05211 8.73989 9.146 8.64601L12.293 5.50001H0.5C0.367392 5.50001 0.240215 5.44733 0.146447 5.35356C0.0526784 5.25979 0 5.13261 0 5.00001Z"
+                                        fill="#037E8C" />
+                                </svg>
+                            </div>
+                        </button>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="header__swiper swiper">
+                <div class="swiper-wrapper header__swiper-wrapper">
+                    <div class="header__slide swiper-slide"><img src="image/bgs/headerBg.webp" alt=""></div>
+                    <div class="header__slide swiper-slide"><img src="image/bgs/headerBg2.webp" alt=""></div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-header">
+            <div class="container">
+                <ul class="sub-header__list">
+                    <li class="sub-header__item">
+                        <div class="sub-header__item-icon">
+                        </div>
+                        <h4 class="sub-header__item-title">
+                            Увлекательные экскурсии
+                        </h4>
+                        <p class="sub-header__item-text">
+                            Маршруты от лесных дорожек
+                            до полного бездорожья!
+                        </p>
+                    </li>
+                    <li class="sub-header__item">
+                        <div class="sub-header__item-icon">
+                        </div>
+                        <h4 class="sub-header__item-title">
+                            Надежная техника
+                        </h4>
+                        <p class="sub-header__item-text">
+                            18 квадроциклов всех японских брендов
+                        </p>
+                    </li>
+                    <li class="sub-header__item">
+                        <div class="sub-header__item-icon">
+                        </div>
+                        <h4 class="sub-header__item-title">
+                            Экипировка бесплатно
+                        </h4>
+                        <p class="sub-header__item-text">
+                            Необходимая экипировка
+                            выдается бесплатно
+                        </p>
+                    </li>
+                    <li class="sub-header__item">
+                        <div class="sub-header__item-icon">
+                        </div>
+                        <h4 class="sub-header__item-title">
+                            Опытные инструктора
+                        </h4>
+                        <p class="sub-header__item-text">
+                            Обеспечат полную безопасность Вашего отдыха
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main>
+
+            <section id="trips" class="our-trips">
+                <div class="container">
+                    <div class="our-trips__inner">
+                        <h2 class="title our-trips__title">
+                            Наши маршруты
+                        </h2>
+                        <div class="trip">
+                            <div class="line"></div>
+                            <div class="trip__body">
+                                <h3 class="trip__title">
+                                    БАЗОВЫЙ
+                                    <span>от 4000 <img src="image/icons/rub.svg" alt=""></span>
+                                </h3>
+                                <ul class="trip__info-list">
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/clock.svg" alt="">Время в пути:
+                                        <span> 1,5 - 2 часа</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/location.svg" alt="">Расстояние:
+                                        <span> 20 - 25 км</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/star.svg" alt="">Сложность:
+                                        <span> 5***</span>
+                                    </li>
+                                </ul>
+                                <div class="trip__way">
+                                    <h3 class="trip__way-title">
+                                        маршрут <img src="image/icons/path.svg" alt="">
+                                    </h3>
+                                    <p>
+                                        Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - Грозовые Ворота
+                                        - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button--white">
+                                        Подробнее
+                                    </button>
+                                    <button class="button--blue">
+                                        Забронировать
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="trip__swiper trip__swiper-static swiper">
+                                <div class="swiper-pagination trips__pagination"></div>
+                                <div class="trip__swiper-wrapper swiper-wrapper">
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base1.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base1.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="trip--switch" class="trip trip--left">
+                            <div class="line"></div>
+                            <div class="trip__body">
+                                <h3 class="trip__title">
+                                    РАСШИРЕННЫЙ
+                                    <span>от 16000 <img src="image/icons/rub.svg" alt=""></span>
+                                </h3>
+                                <ul class="trip__info-list">
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/clock.svg" alt="">Время в пути:
+                                        <span> 6 - 8 часа</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/location.svg" alt="">Расстояние:
+                                        <span> 60 - 70 км</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/star.svg" alt="">Сложность:
+                                        <span> 5***</span>
+                                    </li>
+                                </ul>
+                                <div class="trip__way">
+                                    <h3 class="trip__way-title">
+                                        маршрут <img src="image/icons/path.svg" alt="">
+                                    </h3>
+                                    <p>
+                                        Смотровая - Родник - Камень Джигита - Адербиевка - Гора Нексис - Грозовые Ворота
+                                        - Шашлыки - Цыгельский водопад (чаша любви) - Форсаж
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button--white">
+                                        Подробнее
+                                    </button>
+                                    <button class="button--blue">
+                                        Забронировать
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="trip__swiper trip__swiper-switch swiper">
+                                <div id="pagination--switch" class="swiper-pagination trips__pagination pagination--left"></div>
+                                <div class="trip__swiper-wrapper swiper-wrapper">
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/extended2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/extended3.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/extended2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/extended3.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trip">
+                            <div class="line"></div>
+                            <div class="trip__body">
+                                <h3 class="trip__title">
+                                    Experience
+                                    <span>от 7000 <img src="image/icons/rub.svg" alt=""></span>
+                                </h3>
+                                <ul class="trip__info-list">
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/clock.svg" alt="">Время в пути:
+                                        <span> 4 часа</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/location.svg" alt="">Расстояние:
+                                        <span> 40 - 50 км</span>
+                                    </li>
+                                    <li class="trip__info-item">
+                                        <img src="image/icons/star.svg" alt="">Сложность:
+                                        <span> 5***</span>
+                                    </li>
+                                </ul>
+                                <div class="trip__way">
+                                    <h3 class="trip__way-title">
+                                        маршрут <img src="image/icons/path.svg" alt="">
+                                    </h3>
+                                    <p>
+                                        Форсаж - Голубая бухта - Заброшенная Тур База - Сухогруз Рио - Форсаж
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button--white">
+                                        Подробнее
+                                    </button>
+                                    <button class="button--blue">
+                                        Забронировать
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="trip__swiper trip__swiper-static swiper">
+                                <div class="swiper-pagination trips__pagination"></div>
+                                <div class="trip__swiper-wrapper swiper-wrapper">
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/experience1.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/experience2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/experience1.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/experience2.jpg" alt="">
+                                    </div>
+                                    <div class="trip__slide swiper-slide"><img src="image/paths/base3.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="test main__test">
+                <div class="container">
+                    <div class="test__inner">
+                        <h2 class="test__title title">
+                            Затрудняетесь выбрать маршрут?
+                        </h2>
+                        <p class="test__text">
+                            Пройдите тест и мы поможем вам подобрать оптимальную под вас экскурсию
+                        </p>
+                        <button type="button" class="test__button button--blue">
+                            Начать тест
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="gallery" class="gallery main__gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <h2 class="gallery__title title">
+                            Фото
+                        </h2>
+                        <div class="gallery__swiper swiper">
+                            <div class="gallery__wrapper swiper-wrapper">
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery2.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery1.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery3.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery1.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery2.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery3.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery1.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery2.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide"><img src="image/gallery/gallery3.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery__pagination swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video main__video">
+
+                <div class="container">
+                    <div class="video__inner">
+                        <div class="video__content">
+                            <img src="video/videoPreview.jpg" alt="">
+                            <div class="video__name">
+                                Катаение на квадроциклах в горах
+                            </div>
+                        </div>
+                        <a data-fslightbox="gallery" href="video/Video Preview H 264.webm" class="video__link">
+                            <div class="video__icon">
+                                <img src="image/icons/play.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="instructors main__instructors">
+
+                <div class="container">
+                    <div class="instructors__inner">
+                        <h2 class="instructors__title title">
+                            Наша команда
+                        </h2>
+                        <ul class="instructors_list">
+                            <li class="instructors__item">
+                                <img src="image/instructor/uyliana.jpg" alt="Девушка в синей джинсовке"
+                                    class="instructors__item-img">
+                                <div class="instructor__info">
+                                    <span>Юлиана</span>
+                                    руководитель
+                                </div>
+                            </li>
+                            <li class="instructors__item">
+                                <img src="image/instructor/maxim.jpg" alt="Мужчина в белой кофте"
+                                    class="instructors__item-img">
+                                <div class="instructor__info">
+                                    <span>Максим</span>
+                                    старший инструктор
+                                </div>
+                            </li>
+                            <li class="instructors__item">
+                                <img src="image/instructor/kristina.jpg" alt="Девушка в красной кофте"
+                                    class="instructors__item-img">
+                                <div class="instructor__info">
+                                    <span>Кристина</span>
+                                    администратор
+                                </div>
+                            </li>
+                            <li class="instructors__item">
+                                <img src="image/instructor/uyriy.jpg" alt="Мужчина в очках и рубашке"
+                                    class="instructors__item-img">
+                                <div class="instructor__info">
+                                    <span>Юрий</span>
+                                    старший механик
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="terms-of-service" class="terms-of-service main__terms-of-service">
+                <div class="container">
+                    <div class="terms-of-service__inner">
+                        <h2 class="terms-of-service__title title">
+                            Условия предоставления услуг
+                        </h2>
+                        <ul class="terms-of-service__list">
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    При прокате или аренде строго соблюдать правила техники безопасности и все
+                                    требования инструктора!
+                                </p>
+                            </li>
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    К управлению <span>НЕ ДОПУСКАЮТСЯ</span> лица младше 16 лет и лица в алкогольном
+                                    опьянении!
+                                </p>
+                            </li>
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    Распивать спиртные напитки во время проката, аренды <span>ЗАПРЕЩЕНО!</span> (После?
+                                    На ваше усмотрение)
+                                </p>
+                            </li>
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    Управление осуществляйте в меру своих сил и возможностей. Не переоценивайте себя!
+                                    Это опасно!!!
+                                </p>
+                            </li>
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    Перед каждым катанием опытный инструктор научит Вас основам управления и будет
+                                    сопровождать на протяжении всего маршрута.
+                                </p>
+                            </li>
+                            <li class="terms-of-service__item">
+                                <div class="check__icon">
+                                    <img src="image/icons/check.svg" alt="">
+                                </div>
+                                <p>
+                                    При прокате или аренде строго соблюдать правила техники безопасности и все
+                                    требования инструктора!
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="special-offers" class="special-offers main__special-offers">
+                <div class="container">
+                    <div class="special-offers__inner">
+                        <h2 class="special-offers__inner-title title">
+                            Спецпредложения
+                        </h2>
+                        <ul class="special-offers__list">
+                            <li class="special-offers__item">
+                                <div class="special-offers__item-img">
+                                    <img src="image/certificate-sales/saleImg1.jpg" alt="">
+                                </div>
+                                <div class="special-offers__item-content">
+                                    <h3 class="special-offers__title">
+                                        Скидка 10% <span>на День Рождение</span>
+                                    </h3>
+                                    <p>
+                                        в честь Дня Рождения - дарим имениннику скидку 10%
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="special-offers__item">
+                                <div class="special-offers__item-img">
+                                    <img src="image/certificate-sales/saleImg2.jpg" alt="">
+                                </div>
+                                <div class="special-offers__item-content">
+                                    <h3 class="special-offers__title">
+                                        Скидка 10%
+                                    </h3>
+                                    <p>
+                                        клиентам Ex-Kuban на услуги Загородного клуба Ягода Малина
+                                    </p>
+                                    <button type="button"
+                                        class="special-offers__button button--white">Подробнее</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gift-certificate main__gift-certificate">
+                <div class="container">
+                    <div class="gift-certificate__inner">
+                        <h2 class="gift-certificate__title title">
+                            Подарочный сертификат
+                        </h2>
+                        <p class="gift-certificate__subtitle">
+                            Хотите сделать оригинальный подарок?
+                            <br>Подарите незабываемые эмоции - лучший подарок!
+                        </p>
+                        <div class="gift-certificate__content">
+                            <div class="gift-certificate__info">
+                                <div class="gift-certificate__info-text">
+                                    Хотите удивить своих близких оригинальным подарком? Подарочный сертификат на
+                                    экскурсию на квадроциклах станет не просто интересным подарком, но и реальной
+                                    возможностью приблизить Ваших друзей и близких к новому увлечению.
+                                </div>
+                                <button class="gift-certificate__info-button button--white">
+                                    Подберем сертификат для вас
+                                </button>
+                            </div>
+                            <div class="gift-certificate__certificate">
+                                <img src="image/certificate-sales/certificate.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="qna" class="qna main__qna">
+                <div class="container">
+                    <div class="qna__inner">
+                        <h2 class="qna__title title">
+                            Вопросы-ответы
+                        </h2>
+                        <div class="qna__body">
+                            <ul class="accordion-list">
+                                <li class="accordion-list__item">
+                                    <!-- при нажатии на кнопку будет отркываться контент -->
+                                    <button class="accordion-list__control" type="button">
+                                        <h3 class="accordion-list__control-title">
+                                            Актуальный вопрос?
+                                        </h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.6835 9.92373L1.83715 0.237475C1.41625 -0.0796975 0.734808 -0.0791643 0.314616 0.239116C-0.10525 0.557355 -0.104165 1.07288 0.316786 1.3903L12.3985 10.5L0.316352 19.6097C-0.104545 19.9272 -0.10563 20.4424 0.314182 20.7607C0.52482 20.9202 0.800771 21 1.07672 21C1.35197 21 1.62683 20.9208 1.83709 20.7623L14.6835 11.0763C14.8862 10.9238 15 10.7163 15 10.5C15 10.2838 14.8859 10.0765 14.6835 9.92373Z"
+                                                    fill="#121214" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="accordion-list__content">
+                                        <!-- доп оболочка для флексбокса -->
+                                        <div class="accordion-content">
+                                            <p class="accordion-content__text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <!-- при нажатии на кнопку будет отркываться контент -->
+                                    <button class="accordion-list__control" type="button">
+                                        <h3 class="accordion-list__control-title">
+                                            Актуальный вопрос?
+                                        </h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.6835 9.92373L1.83715 0.237475C1.41625 -0.0796975 0.734808 -0.0791643 0.314616 0.239116C-0.10525 0.557355 -0.104165 1.07288 0.316786 1.3903L12.3985 10.5L0.316352 19.6097C-0.104545 19.9272 -0.10563 20.4424 0.314182 20.7607C0.52482 20.9202 0.800771 21 1.07672 21C1.35197 21 1.62683 20.9208 1.83709 20.7623L14.6835 11.0763C14.8862 10.9238 15 10.7163 15 10.5C15 10.2838 14.8859 10.0765 14.6835 9.92373Z"
+                                                    fill="#121214" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="accordion-list__content">
+                                        <!-- доп оболочка для флексбокса -->
+                                        <div class="accordion-content">
+                                            <p class="accordion-content__text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <!-- при нажатии на кнопку будет отркываться контент -->
+                                    <button class="accordion-list__control" type="button">
+                                        <h3 class="accordion-list__control-title">
+                                            Актуальный вопрос?
+                                        </h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.6835 9.92373L1.83715 0.237475C1.41625 -0.0796975 0.734808 -0.0791643 0.314616 0.239116C-0.10525 0.557355 -0.104165 1.07288 0.316786 1.3903L12.3985 10.5L0.316352 19.6097C-0.104545 19.9272 -0.10563 20.4424 0.314182 20.7607C0.52482 20.9202 0.800771 21 1.07672 21C1.35197 21 1.62683 20.9208 1.83709 20.7623L14.6835 11.0763C14.8862 10.9238 15 10.7163 15 10.5C15 10.2838 14.8859 10.0765 14.6835 9.92373Z"
+                                                    fill="#121214" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="accordion-list__content">
+                                        <!-- доп оболочка для флексбокса -->
+                                        <div class="accordion-content">
+                                            <p class="accordion-content__text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion-list__item">
+                                    <!-- при нажатии на кнопку будет отркываться контент -->
+                                    <button class="accordion-list__control" type="button">
+                                        <h3 class="accordion-list__control-title">
+                                            Актуальный вопрос?
+                                        </h3>
+                                        <div class="accordion-list__control-icon">
+                                            <svg width="15" height="21" viewBox="0 0 15 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M14.6835 9.92373L1.83715 0.237475C1.41625 -0.0796975 0.734808 -0.0791643 0.314616 0.239116C-0.10525 0.557355 -0.104165 1.07288 0.316786 1.3903L12.3985 10.5L0.316352 19.6097C-0.104545 19.9272 -0.10563 20.4424 0.314182 20.7607C0.52482 20.9202 0.800771 21 1.07672 21C1.35197 21 1.62683 20.9208 1.83709 20.7623L14.6835 11.0763C14.8862 10.9238 15 10.7163 15 10.5C15 10.2838 14.8859 10.0765 14.6835 9.92373Z"
+                                                    fill="#121214" />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <div class="accordion-list__content">
+                                        <!-- доп оболочка для флексбокса -->
+                                        <div class="accordion-content">
+                                            <p class="accordion-content__text">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="qna__body-help">
+                                <div class="qna__body-img"><img src="image/icons/QnA.svg" alt=""></div>
+                                <h3>
+                                    Есть вопросы?
+                                </h3>
+                                <p>
+                                    Не стесняйтесь обращаться к нам,
+                                    если у вас есть какие-либо вопросы, предложения
+                                    или идеи для сотрудничества
+                                </p>
+                                <button class="qna__body-button button--blue">
+                                    Задать вопрос
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="services main__services">
+                <div class="container">
+                    <div class="services__inner">
+                        <h2 class="services__title title">
+                            Дополнительные услуги
+                        </h2>
+                        <ul class="services__list">
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/1.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Эвакуация, ремонт, квадроциклов</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/2.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Фото, видеосъемка</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/3.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Транспортировка техники</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/4.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Заправка, чекап, мойка</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/5.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Корпоративы, тимбилдинги</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/6.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Выездной кейтеринг</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/7.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Индивидуальные маршруты</a>
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="services__item-img"><img src="image/more-condition/8.jpg" alt=""></div>
+                                <div class="services__item-text">
+                                    <a href="#">Услуги гида</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="contacts main__contacts">
+                <div class="container">
+                    <div class="contacts__inner">
+                        <div class="contacts__body">
+                            <h2 class="contacts__body-title title">
+                                Контакты
+                            </h2>
+                            <ul class="contacts__body-list">
+                                <li>
+                                    <address class="contacts__body-item">
+                                        <div class="contacts__body-icon">
+                                            <img src="image/icons/home.svg" alt="">
+                                        </div>
+                                        город Геленжик
+                                    </address>
+                                </li>
+                                <li>
+                                    <a class="contacts__body-item" href="tel:79999999999">
+                                        <div class="contacts__body-icon"><img src="image/icons/phoneFooter.svg" alt="">
+                                        </div>
+                                        <address>+7 928 428-00-62</address>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contacts__body-item" href="mailto:experience@groupgrand.ru">
+                                        <div class="contacts__body-icon">
+                                            <img src="image/icons/mail.svg" alt="">
+                                        </div>
+                                        <address>experience@groupgrand.ru</address>
+                                    </a>
+                                </li>
+                                <li>
+                                    <address class="contacts__body-item">
+                                        <div class="contacts__body-icon"><img src="image/icons/clockFooter.svg" alt="">
+                                        </div>
+                                        <ul>
+                                            <li>Пн - Пт: 9:00 - 18:00</li>
+                                            <li>Сб: 9:00 - 17:00</li>
+                                            <li>Вс - выходной</li>
+                                        </ul>
+                                    </address>
+                                </li>
+                            </ul>
+                            <div class="contacts__text-us">
+                                <h3 class="text-us__title">
+                                    Написать нам:
+                                </h3>
+                                <ul class="socials__list">
+                                    <li class="socials__item"><a href="#"><img src="image/icons/WA.svg" alt=""></a></li>
+                                    <li class="socials__item"><a href="#"><img src="image/icons/insta1.svg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="map" class="contacts__map"></div>
+                        <h2 class="contacts__body-title title title-at--1100">
+                            Контакты
+                        </h2>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="/"><img src="image/icons/logo.svg" alt=""></a>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item">
+                                <a href="#trips" class="footer__nav-link">Маршруты</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#gallery" class="footer__nav-link">Галерея</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#qna" class="footer__nav-link">Вопрос-Ответ</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#contacts" class="footer__nav-link">Контакты</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#terms-of-service" class="footer__nav-link">Условия</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#special-offers" class="footer__nav-link">Спецпредложения</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="copy-text">
+                    © CFMOTO Experience Kuban. Внедорожный полигон CFMOTO и прокат квадроциклов в Геленджике
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__window">
+            <a href="#" class="modal__close">
+                <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <clipPath id="clip41_441">
+                            <rect rx="11.250000" width="22.500000" height="22.500000"
+                                transform="translate(0.750000 0.750000)" fill="white" fill-opacity="0"></rect>
+                        </clipPath>
+                    </defs>
+                    <rect rx="11.250000" width="22.500000" height="22.500000" transform="translate(0.750000 0.750000)"
+                        fill="#FFFFFF" fill-opacity="0"></rect>
+                    <g clip-path="url(#clip41_441)">
+                        <path d="M6.75 17.24L12 12L17.24 17.24M17.24 6.75L12 12L6.75 6.75" stroke="#E1D9E1"
+                            stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </g>
+                    <rect rx="11.250000" width="22.500000" height="22.500000" transform="translate(0.750000 0.750000)"
+                        stroke="#E1D9E1" stroke-opacity="1.000000" stroke-width="1.500000"></rect>
+                </svg>
+            </a>
+            <h3 class="modal__title">
+                Оставить заявку
+            </h3>
+            <form class="modal__form">
+                <label class="modal__form-user">
+                    Как к Вам обращаться?
+                    <input required type="text" class="modal__input modal__input--move" placeholder="Имя">
+                    <span>Введите имя</span>
+                </label>
+                <label  class="modal__form-phone">
+                    Телефон или WhatsApp
+                    <input required type="tel" class="modal__input">
+                </label>
+                
+            </form>
+            <button type="submit" class="button--blue modal__button">Отправить</button>
+        </div>
+    </div>
+</body>
+
+<script src="js/inputMask.js"></script>
+<script src="js/fslightbox.js"></script>
+<script src="js/resize.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=fdaf0168-d321-49ed-832e-3cd81229343a" async></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>
