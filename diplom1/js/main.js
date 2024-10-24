@@ -198,9 +198,6 @@
 
 })();
 
-ymaps.ready(init);
-
-
 // Функция инициализации карты
 function init() {
     var myMap = new ymaps.Map("map", {
