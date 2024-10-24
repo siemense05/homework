@@ -204,13 +204,6 @@ function init() {
         center: [44.5610757298697, 38.07711077282939],
         zoom: 17,
     });
-
-    var myPlacemark = new ymaps.Placemark([55.751244, 37.618423], {
-        hintContent: 'Моя метка',
-        balloonContent: 'Это текст балуна.'
-    });
-
-    myMap.geoObjects.add(myPlacemark);
 }
 
 // Обработчик событий прокрутки
