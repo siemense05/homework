@@ -196,13 +196,13 @@
         }
     };
 
-    ymaps.ready(init);
-
-    function init() {
-        var myMap = new ymaps.Map("map", {
-            center: [44.5610757298697, 38.07711077282939], // Координаты Геленджика
-            zoom: 17,
-        });
-    }
-
 })();
+
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map("map", {
+        center: [44.5610757298697, 38.07711077282939], // Координаты Геленджика
+        zoom: 17,
+    });
+}
