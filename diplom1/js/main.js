@@ -200,9 +200,30 @@
 
 ymaps.ready(init);
 
+
+// Функция инициализации карты
 function init() {
     var myMap = new ymaps.Map("map", {
-        center: [44.5610757298697, 38.07711077282939], // Координаты Геленджика
+        center: [44.5610757298697, 38.07711077282939],
         zoom: 17,
     });
+
+    var myPlacemark = new ymaps.Placemark([55.751244, 37.618423], {
+        hintContent: 'Моя метка',
+        balloonContent: 'Это текст балуна.'
+    });
+
+    myMap.geoObjects.add(myPlacemark);
 }
+
+// Обработчик событий прокрутки
+window.onscroll = function() {
+    var mapDiv = document.getElementById('map');
+    var rect = mapDiv.getBoundingClientRect();
+    // Проверяем, попадает ли карта в область видимости
+    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+        mapDiv.style.display = 'block'; // Показываем карту
+        loadYaMap(); // Загружаем карту
+        window.onscroll = null; // Убираем обработчик после загрузки
+    }
+};
