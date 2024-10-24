@@ -206,7 +206,7 @@ function loadYaMap() {
 
     // Скрипт для загрузки Яндекс.Карт
     var script = document.createElement('script');
-    script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+    script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=fdaf0168-d321-49ed-832e-3cd81229343a";
     script.onload = function() {
         // Инициализация карты
         ymaps.ready(init);
