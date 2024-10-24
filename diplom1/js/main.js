@@ -198,22 +198,57 @@
 
 })();
 
-// Функция инициализации карты
-function init() {
-    var myMap = new ymaps.Map("map", {
-        center: [44.5610757298697, 38.07711077282939],
-        zoom: 17,
-    });
+
+// Функция для загрузки карты
+function loadYaMap() {
+    // Проверяем, загружалась ли карта ранее
+    if (window.yaMapLoaded) return;
+
+    // Скрипт для загрузки Яндекс.Карт
+    var script = document.createElement('script');
+    script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+    script.onload = function() {
+        // Инициализация карты
+        ymaps.ready(init);
+        window.yaMapLoaded = true; // Помечаем карту как загруженную
+    };
+    // Добавляем скрипт в конец документа
+    document.body.appendChild(script);
 }
 
-// Обработчик событий прокрутки
-window.onscroll = function() {
-    var mapDiv = document.getElementById('map');
-    var rect = mapDiv.getBoundingClientRect();
-    // Проверяем, попадает ли карта в область видимости
-    if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        mapDiv.style.display = 'block'; // Показываем карту
-        loadYaMap(); // Загружаем карту
-        window.onscroll = null; // Убираем обработчик после загрузки
+// Функция для загрузки карты
+    function loadYaMap() {
+        // Проверяем, загружалась ли карта ранее
+        if (window.yaMapLoaded) return;
+
+        // Скрипт для загрузки Яндекс.Карт
+        var script = document.createElement('script');
+        script.src = "https://api-maps.yandex.ru/2.1/?lang=ru_RU";
+        script.onload = function() {
+            // Инициализация карты
+            ymaps.ready(init);
+            window.yaMapLoaded = true; // Помечаем карту как загруженную
+        };
+        // Добавляем скрипт в конец документа
+        document.body.appendChild(script);
     }
-};
+
+    // Функция инициализации карты
+    function init() {
+        var myMap = new ymaps.Map("map", {
+            center: [44.5610757298697, 38.07711077282939],
+        zoom: 17,
+        });
+    }
+
+    // Обработчик событий прокрутки
+    window.onscroll = function() {
+        var mapDiv = document.getElementById('map');
+        var rect = mapDiv.getBoundingClientRect();
+        // Проверяем, попадает ли карта в область видимости
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            mapDiv.style.display = 'block'; // Показываем карту
+            loadYaMap(); // Загружаем карту
+            window.onscroll = null; // Убираем обработчик после загрузки
+        }
+    };
